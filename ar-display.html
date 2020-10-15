@@ -11,17 +11,18 @@
 <style>
     #arjsDebugUIContainer > div:nth-child(2) > span,
     #arjsDebugUIContainer > div:nth-child(1),
-    #arjsDebugUIContainer {
+    #arjsDebugUIContainer,
+    body > a-scene > div.a-enter-vr.embedded > button {
         display: none !important;
     }
 </style>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
 
-        <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/lunchboxjuicebox/metalz-ar/master/pattern-metalz-marker.patt'>
+        <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/lunchboxjuicebox/xmas-2020/main/patts/patt-01.patt'>
             <!-- define your gltf asset -->
             <!-- <a-entity gltf-model="url(https://raw.githubusercontent.com/akashkuttappa/armodels/master/models/busterDrone.gltf)"></a-entity> -->
-            <a-entity scale="0.1 0.1 0.1" position="0.1 0.5 0" rotation="0 35 0"gltf-model="url(https://raw.githubusercontent.com/lunchboxjuicebox/xmas-2020/main/ar-models/cute_reindeer/scene.gltf)"></a-entity>
+            <a-entity scale="0.2 0.2 0.2" position="0 0.9 0" rotation="0 35 0"gltf-model="url(https://raw.githubusercontent.com/lunchboxjuicebox/xmas-2020/main/ar-models/cute_reindeer/scene.gltf)"></a-entity>
             <!-- <a-entity position='1.3 0.7 0' gltf-model="url(https://raw.githubusercontent.com/lunchboxjuicebox/metalz-ar/master/24to1scale.gltf)"></a-entity> -->
 
         </a-marker-camera>
