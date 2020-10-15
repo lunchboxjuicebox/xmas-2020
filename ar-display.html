@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metalz AR</title>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- <style>
+    #arjsDebugUIContainer > div:nth-child(2) > span,
+    #arjsDebugUIContainer > div:nth-child(1) > span,
+    body > a-scene > div.a-enter-vr.embedded > button {
+        display: none !important;
+    }
+</style> -->
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+
+        <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/lunchboxjuicebox/metalz-ar/master/pattern-metalz-marker.patt'>
+            <!-- define your gltf asset -->
+            <!-- <a-entity gltf-model="url(https://raw.githubusercontent.com/akashkuttappa/armodels/master/models/busterDrone.gltf)"></a-entity> -->
+
+            <a-entity position='1.3 0.7 0' gltf-model="url(https://raw.githubusercontent.com/lunchboxjuicebox/metalz-ar/master/24to1scale.gltf)"></a-entity>
+
+        </a-marker-camera>
+        
+        
+
+    </a-scene>
+</body>
+</html>
